@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectInn | Payroll & HR Solutions - De toekomst van salarisadministratie</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="ConnectInn helpt ondernemers en HR-managers met salarisadministratie en HR-beheer. Meer controle, inzicht en efficiëntie voor bedrijven in België.">
+    <meta name="keywords" content="payroll, salarisadministratie, HR, België, loonbeheer, personeelsbeheer, ConnectInn">
+    <meta name="author" content="ConnectInn">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ConnectInn | Payroll & HR Solutions">
+    <meta property="og:description" content="De toekomst van salarisadministratie. Vereenvoudig je HR en payroll met ConnectInn.">
+    <meta property="og:image" content="/img/og-image.jpg">
+    <meta property="og:url" content="https://connectinn.be">
+    <meta property="og:site_name" content="ConnectInn">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ConnectInn | Payroll & HR Solutions">
+    <meta name="twitter:description" content="De toekomst van salarisadministratie">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+    
+    <!-- ================================
+         CDN DEPENDENCIES
+         ================================ -->
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- GSAP Animation Library -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-slate-900 overflow-x-hidden">
+    
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ================================
+         NAVIGATION
+         ================================ -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-[100] transition-all duration-500 bg-white/0 py-6">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <div class="flex items-center gap-14">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center transition-transform hover:opacity-80">
+                    <img src="img/CONNECT-INN-TRANSPARANT.png" alt="ConnectInn Logo" class="h-11 w-auto" />
+                </a>
+
+                <!-- Desktop Menu Items -->
+                <div class="hidden lg:flex items-center gap-2">
+
+                    <!-- Solutions Dropdown -->
+                    <div class="relative menu-trigger">
+                        <button class="px-4 py-2 text-[0.9375rem] font-semibold flex items-center gap-1.5 transition-all rounded-[10px] text-slate-600 border border-transparent hover:text-blue-900 hover:bg-slate-50 hover:border-slate-200">
+                            Oplossingen
+                            <i data-lucide="chevron-down" class="w-3.5 h-3.5 chevron-icon"></i>
+                        </button>
+                        <!-- Mega Menu -->
+                        <div class="mega-menu absolute top-full left-0 mt-4 w-[640px] bg-white border border-slate-100 shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] rounded-[20px] p-8 grid grid-cols-2 gap-x-8 gap-y-6 z-[110] border border-slate-200 hover:text-blue-900">
+                            <div class="col-span-2 mb-2">
+                                <h4 class="text-[0.6875rem] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4">Onze Oplossingen</h4>
+                            </div>
+                            <a href="#" class="flex items-start gap-4 group">
+                                <div class="p-3 bg-slate-50 text-slate-400 rounded-[10px] group-hover:bg-blue-50 group-hover:text-blue-900 transition-all duration-300">
+                                    <i data-lucide="layout" class="w-5 h-5"></i>
+                                </div>
+                                <div class="pt-1">
+                                    <div class="text-[0.9375rem] font-bold text-slate-900 group-hover:text-blue-900 transition-colors mb-0.5">Start-ups & KMO's</div>
+                                    <div class="text-[0.8125rem] text-slate-500 font-medium leading-relaxed">Efficiënte loonverwerking die meegroeit.</div>
+                                </div>
+                            </a>
+                            <a href="#" class="flex items-start gap-4 group">
+                                <div class="p-3 bg-slate-50 text-slate-400 rounded-[10px] group-hover:bg-blue-50 group-hover:text-blue-900 transition-all duration-300">
+                                    <i data-lucide="database" class="w-5 h-5"></i>
+                                </div>
+                                <div class="pt-1">
+                                    <div class="text-[0.9375rem] font-bold text-slate-900 group-hover:text-blue-900 transition-colors mb-0.5">Accountants</div>
+                                    <div class="text-[0.8125rem] text-slate-500 font-medium leading-relaxed">Bespaar tijd met onze partner-portal.</div>
+                                </div>
+                            </a>
+                            <a href="#" class="flex items-start gap-4 group">
+                                <div class="p-3 bg-slate-50 text-slate-400 rounded-[10px] group-hover:bg-blue-50 group-hover:text-blue-900 transition-all duration-300">
+                                    <i data-lucide="shield" class="w-5 h-5"></i>
+                                </div>
+                                <div class="pt-1">
+                                    <div class="text-[0.9375rem] font-bold text-slate-900 group-hover:text-blue-900 transition-colors mb-0.5">Grote Bedrijven</div>
+                                    <div class="text-[0.8125rem] text-slate-500 font-medium leading-relaxed">Complexe HR-structuren vereenvoudigd.</div>
+                                </div>
+                            </a>
+                            <a href="#" class="flex items-start gap-4 group">
+                                <div class="p-3 bg-slate-50 text-slate-400 rounded-[10px] group-hover:bg-blue-50 group-hover:text-blue-900 transition-all duration-300">
+                                    <i data-lucide="help-circle" class="w-5 h-5"></i>
+                                </div>
+                                <div class="pt-1">
+                                    <div class="text-[0.9375rem] font-bold text-slate-900 group-hover:text-blue-900 transition-colors mb-0.5">Support Hub</div>
+                                    <div class="text-[0.8125rem] text-slate-500 font-medium leading-relaxed">Directe toegang tot onze specialisten.</div>
+                                </div>
+                            </a>
+                            <div class="col-span-2 mt-4 pt-6 border-t border-slate-50">
+                                <a href="#" class="flex items-center gap-2 text-[0.8125rem] font-bold text-primary-blue hover:gap-3 transition-all">
+                                    Bekijk het volledige overzicht <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Products Dropdown -->
+                    <div class="relative menu-trigger">
+                        <button class="px-4 py-2 text-[0.9375rem] font-semibold flex items-center gap-1.5 transition-all rounded-[10px] text-slate-600 border border-transparent hover:text-blue-900 hover:bg-slate-50 hover:border-slate-200">
+                            Producten
+                            <i data-lucide="chevron-down" class="w-3.5 h-3.5 chevron-icon"></i>
+                        </button>
+                        <!-- Mega Menu -->
+                        <div class="mega-menu absolute top-full left-0 mt-4 w-[640px] bg-white border border-slate-100 shadow-[0_40px_80px_-20px_rgba(0,0,0,0.1)] rounded-[20px] p-8 grid grid-cols-2 gap-x-8 gap-y-6 z-[110] border border-slate-200 hover:text-blue-900">
+                            <div class="col-span-2 mb-2">
+                                <h4 class="text-[0.6875rem] font-bold text-slate-400 uppercase tracking-[0.2em] mb-4">Onze Producten</h4>
+                            </div>
+                            <a href="#" class="flex items-start gap-4 group">
+                                <div class="p-3 bg-slate-50 text-slate-400 rounded-[10px] group-hover:bg-blue-50 group-hover:text-blue-900 transition-all duration-300">
+                                    <i data-lucide="zap" class="w-5 h-5"></i>
+                                </div>
+                                <div class="pt-1">
+                                    <div class="text-[0.9375rem] font-bold text-slate-900 group-hover:text-blue-900 transition-colors mb-0.5">Payroll Core</div>
+                                    <div class="text-[0.8125rem] text-slate-500 font-medium leading-relaxed">Geautomatiseerde verloning voor elke sector.</div>
+                                </div>
+                            </a>
+                            <a href="#" class="flex items-start gap-4 group">
+                                <div class="p-3 bg-slate-50 text-slate-400 rounded-[10px] group-hover:bg-blue-50 group-hover:text-blue-900 transition-all duration-300">
+                                    <i data-lucide="user-plus" class="w-5 h-5"></i>
+                                </div>
+                                <div class="pt-1">
+                                    <div class="text-[0.9375rem] font-bold text-slate-900 group-hover:text-blue-900 transition-colors mb-0.5">HR Suite</div>
+                                    <div class="text-[0.8125rem] text-slate-500 font-medium leading-relaxed">Beheer vakantie, ziekte en contracten.</div>
+                                </div>
+                            </a>
+                            <a href="#" class="flex items-start gap-4 group">
+                                <div class="p-3 bg-slate-50 text-slate-400 rounded-[10px] group-hover:bg-blue-50 group-hover:text-blue-900 transition-all duration-300">
+                                    <i data-lucide="sparkles" class="w-5 h-5"></i>
+                                </div>
+                                <div class="pt-1">
+                                    <div class="text-[0.9375rem] font-bold text-slate-900 group-hover:text-blue-900 transition-colors mb-0.5">Time Tracking</div>
+                                    <div class="text-[0.8125rem] text-slate-500 font-medium leading-relaxed">Eenvoudig uren en overuren bijhouden.</div>
+                                </div>
+                            </a>
+                            <a href="#" class="flex items-start gap-4 group">
+                                <div class="p-3 bg-slate-50 text-slate-400 rounded-[10px] group-hover:bg-blue-50 group-hover:text-blue-900 transition-all duration-300">
+                                    <i data-lucide="pie-chart" class="w-5 h-5"></i>
+                                </div>
+                                <div class="pt-1">
+                                    <div class="text-[0.9375rem] font-bold text-slate-900 group-hover:text-blue-900 transition-colors mb-0.5">Insights</div>
+                                    <div class="text-[0.8125rem] text-slate-500 font-medium leading-relaxed">Strategische data voor betere beslissingen.</div>
+                                </div>
+                            </a>
+                            <div class="col-span-2 mt-4 pt-6 border-t border-slate-50">
+                                <a href="#" class="flex items-center gap-2 text-[0.8125rem] font-bold text-primary-blue hover:gap-3 transition-all">
+                                    Bekijk het volledige overzicht <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="pricing.html" class="px-4 py-2 text-[0.9375rem] font-semibold flex items-center gap-1.5 transition-all rounded-[10px] text-slate-600 hover:text-blue-900">Tarieven</a>
+                    <a href="about_us.html" class="px-4 py-2 text-[0.9375rem] font-semibold flex items-center gap-1.5 transition-all rounded-[10px] text-slate-600 hover:text-blue-900">Over ons</a>
+                    <a href="contact.html" class="px-4 py-2 text-[0.9375rem] font-semibold flex items-center gap-1.5 transition-all rounded-[10px] text-slate-600 hover:text-blue-900">Contact</a>
+                </div>
+            </div>
+
+            <!-- Desktop Actions -->
+            <div class="hidden lg:flex items-center gap-5">
+                <!-- Language Selector Dropdown -->
+                <div class="relative menu-trigger-lang group">
+                    <button class="flex items-center gap-2 text-slate-600 hover:text-slate-900 transition-all px-3 py-2 rounded-[10px] hover:bg-slate-50">
+                        <span class="text-lg" id="selected-flag">🇧🇪</span>
+                        <span class="text-[0.9375rem] font-bold uppercase tracking-wider" id="selected-lang">BE</span>
+                    </button>
+                    
+                    <!-- Language Dropdown Menu -->
+                    <div class="lang-dropdown absolute top-full right-0 mt-2 w-[200px] bg-white border border-slate-200 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.1)] rounded-[16px] p-2 z-[120] opacity-0 visibility-hidden transform translate-y-[-10px] transition-all duration-300 group-hover:opacity-100 group-hover:visibility-visible group-hover:translate-y-0">
+                        <!-- Nederlands -->
+                        <a href="/nl-be" class="flex items-center gap-3 px-4 py-3 rounded-[10px] text-slate-700 hover:bg-blue-50 hover:text-blue-900 transition-all duration-200 border-l-4 border-blue-600" data-lang="nl" data-flag="🇧🇪">
+                            <span class="text-xl">🇧🇪</span>
+                            <div>
+                                <div class="text-[0.9375rem] font-bold">Nederlands</div>
+                            </div>
+                        </a>
+
+                        <!-- Français -->
+                        <a href="/nl-fr" class="flex items-center gap-3 px-4 py-3 rounded-[10px] text-slate-700 hover:bg-blue-50 hover:text-blue-900 transition-all duration-200" data-lang="fr" data-flag="🇫🇷">
+                            <span class="text-xl">🇧🇪</span>
+                            <div>
+                                <div class="text-[0.9375rem] font-bold">Français</div>
+                            </div>
+                        </a>
+                        
+                        <!-- English -->
+                        <a href="/en" class="flex items-center gap-3 px-4 py-3 rounded-[10px] text-slate-700 hover:bg-blue-50 hover:text-blue-900 transition-all duration-200" data-lang="en" data-flag="🇬🇧">
+                            <span class="text-xl">🇬🇧</span>
+                            <div>
+                                <div class="text-[0.9375rem] font-bold">English</div>
+                            </div>
+                        </a>
+                        
+                        <!-- العربية -->
+                        <a href="/ar" class="flex items-center gap-3 px-4 py-3 rounded-[10px] text-slate-700 hover:bg-blue-50 hover:text-blue-900 transition-all duration-200" data-lang="ar" data-flag="🇸🇦">
+                            <span class="text-xl">🇸🇦</span>
+                            <div>
+                                <div class="text-[0.9375rem] font-bold">العربية</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <a href="#" class="flex items-center gap-2 text-slate-600 font-bold text-[0.9375rem] hover:text-primary-blue transition-colors hover:text-blue-900">
+                    <i data-lucide="user" class="w-4 h-4"></i>
+                    Inloggen
+                </a>
+                <a href="customer.html" class="px-6 py-2.5 bg-primary-blue text-white font-bold text-[0.875rem] rounded-[10px] shadow-[0_10px_20px_-5px_rgba(29,58,138,0.2)] hover:shadow-[0_15px_30px_-5px_rgba(29,58,138,0.3)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 flex items-center gap-2">
+                    Klant worden
+                    <span class="material-icons" style="font-size: 20px;">arrow_right_alt</span>
+                </a>
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-700 hover:bg-slate-50 rounded-[10px]">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 top-[76px] bg-white z-[90] p-6 flex flex-col">
+            <div class="flex flex-col gap-2">
+                <a href="#" class="p-4 font-bold text-slate-800 hover:bg-slate-50 rounded-[10px] text-lg">Oplossingen</a>
+                <a href="#" class="p-4 font-bold text-slate-800 hover:bg-slate-50 rounded-[10px] text-lg">Producten</a>
+                <a href="#pricing" class="p-4 font-bold text-slate-800 hover:bg-slate-50 rounded-[10px] text-lg">Tarieven</a>
+                <a href="#about" class="p-4 font-bold text-slate-800 hover:bg-slate-50 rounded-[10px] text-lg">Over ons</a>
+                <a href="#about" class="p-4 font-bold text-slate-800 hover:bg-slate-50 rounded-[10px] text-lg">Contact</a>
+            </div>
+            <div class="mt-auto flex flex-col gap-3">
+                <a href="#" class="w-full py-4 text-center border border-slate-200 rounded-[10px] font-bold text-slate-600">Inloggen</a>
+                <a href="#" class="w-full py-4 text-center bg-primary-blue text-white rounded-[10px] font-bold shadow-lg">Start gratis proefperiode</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================================
+         MAIN CONTENT
+         ================================ -->
+    <main id="main-content">
+
+            <!-- ================================
+             CUSTOMER SECTION
+             ================================ -->
+             <section id="customer" class="relative px-6 overflow-visible">
+                <!-- Top Background with Energy Loops -->
+                <div class="absolute inset-x-0 top-0 h-[600px] bg-white pointer-events-none select-none overflow-hidden">
+                    <div class="absolute top-[-20%] left-[-15%] w-[130vw] h-[130vw] bg-blue-500/[0.04] rounded-full blur-[220px]"></div>
+                    <div class="absolute top-[-10%] right-[-10%] w-[120vw] h-[120vw] bg-indigo-500/[0.03] rounded-full blur-[240px]"></div>
+                </div>
+                
+                <div class="absolute inset-x-0 top-[500px] bottom-0 bg-white -z-20"></div>
+                
+                <div class="relative z-10 py-32">
+                
+                <div class="max-w-7xl mx-auto relative">
+                    <!-- Hero Grid: Form Left, Image Right -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                        
+                        <!-- Left: Text & Form -->
+                        <div class="space-y-8 hero-text">
+                            <div class="space-y-6">
+                                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 leading-tight tracking-[-0.04em]">
+                                    Minder administratie en meer groei
+                                </h1>
+                                <p class="text-lg md:text-xl text-slate-600 leading-relaxed font-medium">
+                                    Wij denken dat jij je salarisadministratie prima zelf kunt doen, zolang het maar een paar minuten per maand kost. Met onze software hebben we zoveel mogelijk geautomatiseerd, waardoor jij geen omkijken meer hebt naar veranderde wetgeving en cao's.
+                                </p>
+                            </div>
+
+                            <!-- Trust Indicators -->
+                            <div class="flex flex-wrap gap-6 pt-4">
+                                <div class="flex items-center gap-2 trust-indicator">
+                                    <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center">
+                                        <i data-lucide="check" class="w-5 h-5 text-emerald-600"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-black text-slate-900">Binnen 24 uur</p>
+                                        <p class="text-xs text-slate-500 font-medium">Persoonlijk contact</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-2 trust-indicator">
+                                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
+                                        <i data-lucide="shield-check" class="w-5 h-5 text-primary-blue"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-black text-slate-900">100% veilig</p>
+                                        <p class="text-xs text-slate-500 font-medium">GDPR compliant</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-2 trust-indicator">
+                                    <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
+                                        <i data-lucide="star" class="w-5 h-5 text-purple-600"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm font-black text-slate-900">100+ klanten</p>
+                                        <p class="text-xs text-slate-500 font-medium">Vertrouwen ons</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Lead Form -->
+                            <div class="bg-white rounded-[32px] p-8 shadow-[0_20px_60px_-15px_rgba(29,58,138,0.15)] border-2 border-slate-100 lead-form">
+                                <div class="mb-6">
+                                    <h3 class="text-2xl font-black text-slate-900 mb-2">Word klant in 2 minuten</h3>
+                                    <p class="text-slate-600 font-medium">Vul je gegevens in en we nemen vandaag nog contact met je op</p>
+                                </div>
+
+                                <form id="customer-form" class="space-y-4">
+                                    <!-- Name Fields Row -->
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        <div class="form-group">
+                                            <label class="block text-sm font-black text-slate-900 mb-2">Voornaam *</label>
+                                            <input type="text" name="firstName" placeholder="Jan" required class="w-full px-4 py-3 rounded-[16px] border-2 border-slate-200 focus:border-primary-blue focus:outline-none transition-all duration-200 font-medium text-slate-900 placeholder-slate-400">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="block text-sm font-black text-slate-900 mb-2">Achternaam *</label>
+                                            <input type="text" name="lastName" placeholder="Janssens" required class="w-full px-4 py-3 rounded-[16px] border-2 border-slate-200 focus:border-primary-blue focus:outline-none transition-all duration-200 font-medium text-slate-900 placeholder-slate-400">
+                                        </div>
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div class="form-group">
+                                        <label class="block text-sm font-black text-slate-900 mb-2">E-mailadres *</label>
+                                        <input type="email" name="email" placeholder="jan@bedrijf.be" required class="w-full px-4 py-3 rounded-[16px] border-2 border-slate-200 focus:border-primary-blue focus:outline-none transition-all duration-200 font-medium text-slate-900 placeholder-slate-400">
+                                    </div>
+
+                                    <!-- Phone -->
+                                    <div class="form-group">
+                                        <label class="block text-sm font-black text-slate-900 mb-2">Telefoonnummer *</label>
+                                        <input type="tel" name="phone" placeholder="+32 xxx xx xx xx" required class="w-full px-4 py-3 rounded-[16px] border-2 border-slate-200 focus:border-primary-blue focus:outline-none transition-all duration-200 font-medium text-slate-900 placeholder-slate-400">
+                                    </div>
+
+                                    <!-- Company Name -->
+                                    <div class="form-group">
+                                        <label class="block text-sm font-black text-slate-900 mb-2">Bedrijfsnaam</label>
+                                        <input type="text" name="company" placeholder="Je bedrijf" class="w-full px-4 py-3 rounded-[16px] border-2 border-slate-200 focus:border-primary-blue focus:outline-none transition-all duration-200 font-medium text-slate-900 placeholder-slate-400">
+                                    </div>
+
+                                    <!-- Submit Button -->
+                                    <button type="submit" class="w-full bg-primary-blue text-white font-black py-4 px-6 rounded-[16px] hover:bg-blue-800 transition-all duration-300 text-lg mt-6 flex items-center justify-center gap-2 shadow-[0_10px_30px_-5px_rgba(29,58,138,0.3)]">
+                                        <span>Start vandaag nog</span>
+                                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                                    </button>
+
+                                    <!-- Privacy Notice -->
+                                    <p class="text-xs text-slate-500 text-center mt-4 font-medium">
+                                        Door te registreren ga je akkoord met onze <a href="#" class="text-primary-blue hover:underline">privacyvoorwaarden</a>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Right: Image (extending out) -->
+                        <div class="relative lg:translate-y-[-40px] hero-image">
+                            <div class="relative rounded-[42px] overflow-hidden shadow-[0_40px_100px_-20px_rgba(29,58,138,0.25)]">
+                                <img src="img/payroll.png" alt="ConnectInn Payroll Platform" class="w-full h-auto">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <!-- ================================
+             BENEFITS SECTION
+             ================================ -->
+            <section class="py-32 px-6 bg-gradient-to-b from-white via-blue-50/30 to-white relative overflow-hidden">
+                <div class="max-w-7xl mx-auto">
+                    <!-- Section Header -->
+                    <div class="text-center mb-24 benefits-header">
+                        <span class="inline-block px-4 py-2 bg-blue-100 text-primary-blue rounded-full text-xs font-black uppercase tracking-widest mb-6">Onze Voordelen</span>
+                        <h2 class="text-4xl md:text-6xl font-black text-slate-900 mt-3 mb-6 leading-tight tracking-[-0.04em]">
+                            Alles wat je nodig hebt<br/>op <span class="text-primary-blue">één plek</span>
+                        </h2>
+                        <p class="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-medium">
+                            Geen gedoe met meerdere tools. ConnectInn combineert alles: payroll, HR, tijdregistratie en compliance in één intuïtieve platform.
+                        </p>
+                    </div>
+
+                    <!-- Benefits Grid - 2x3 Layout -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+                        <!-- Benefit 1 -->
+                        <div class="benefit-card group bg-white rounded-[32px] p-8 border-2 border-slate-100 hover:border-primary-blue hover:shadow-[0_30px_80px_-15px_rgba(29,58,138,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-full -mr-16 -mt-16 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            <div class="relative z-10">
+                                <div class="w-16 h-16 rounded-[20px] bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <i data-lucide="zap" class="w-8 h-8 text-primary-blue"></i>
+                                </div>
+                                <h3 class="text-2xl font-black text-slate-900 mb-3">Supersnel</h3>
+                                <p class="text-slate-600 leading-relaxed font-medium mb-4">
+                                    Verwerk maandloonstukken in slechts enkele minuten. Geen gedoe met handmatige invoer of verouderde processen.
+                                </p>
+                                <div class="flex items-center gap-2 text-sm font-bold text-primary-blue">
+                                    <span class="text-lg">⚡</span>
+                                    <span>80% sneller dan traditioneel</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Benefit 2 -->
+                        <div class="benefit-card group bg-white rounded-[32px] p-8 border-2 border-slate-100 hover:border-emerald-500 hover:shadow-[0_30px_80px_-15px_rgba(16,185,129,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-50 rounded-full -mr-16 -mt-16 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            <div class="relative z-10">
+                                <div class="w-16 h-16 rounded-[20px] bg-gradient-to-br from-emerald-100 to-emerald-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <i data-lucide="shield-check" class="w-8 h-8 text-emerald-600"></i>
+                                </div>
+                                <h3 class="text-2xl font-black text-slate-900 mb-3">100% Compliant</h3>
+                                <p class="text-slate-600 leading-relaxed font-medium mb-4">
+                                    Automatisch bijgewerkt met de nieuwste wetgeving, belastingregels en cao-afspraken. Geen stress meer over compliance.
+                                </p>
+                                <div class="flex items-center gap-2 text-sm font-bold text-emerald-600">
+                                    <span class="text-lg">✓</span>
+                                    <span>GDPR & ISO 27001 gecertificeerd</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Benefit 3 -->
+                        <div class="benefit-card group bg-white rounded-[32px] p-8 border-2 border-slate-100 hover:border-purple-500 hover:shadow-[0_30px_80px_-15px_rgba(147,51,234,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-purple-50 rounded-full -mr-16 -mt-16 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            <div class="relative z-10">
+                                <div class="w-16 h-16 rounded-[20px] bg-gradient-to-br from-purple-100 to-purple-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <i data-lucide="users" class="w-8 h-8 text-purple-600"></i>
+                                </div>
+                                <h3 class="text-2xl font-black text-slate-900 mb-3">Expert Support</h3>
+                                <p class="text-slate-600 leading-relaxed font-medium mb-4">
+                                    Niet met een chatbot, maar met echte HR-experts. Via mail, telefoon of videobel.
+                                </p>
+                                <div class="flex items-center gap-2 text-sm font-bold text-purple-600">
+                                    <span class="text-lg">👥</span>
+                                    <span>11+ HR-specialisten beschikbaar</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Benefit 4 -->
+                        <div class="benefit-card group bg-white rounded-[32px] p-8 border-2 border-slate-100 hover:border-sky-500 hover:shadow-[0_30px_80px_-15px_rgba(14,165,233,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-sky-50 rounded-full -mr-16 -mt-16 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            <div class="relative z-10">
+                                <div class="w-16 h-16 rounded-[20px] bg-gradient-to-br from-sky-100 to-sky-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <i data-lucide="cloud" class="w-8 h-8 text-sky-600"></i>
+                                </div>
+                                <h3 class="text-2xl font-black text-slate-900 mb-3">Cloud-based</h3>
+                                <p class="text-slate-600 leading-relaxed font-medium mb-4">
+                                    Werk van overal, op elk moment. Altijd gesynchroniseerd en veilig. Geen interne servers nodig.
+                                </p>
+                                <div class="flex items-center gap-2 text-sm font-bold text-sky-600">
+                                    <span class="text-lg">☁️</span>
+                                    <span>Realtime sync op alle devices</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Benefit 5 -->
+                        <div class="benefit-card group bg-white rounded-[32px] p-8 border-2 border-slate-100 hover:border-amber-500 hover:shadow-[0_30px_80px_-15px_rgba(217,119,6,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-amber-50 rounded-full -mr-16 -mt-16 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            <div class="relative z-10">
+                                <div class="w-16 h-16 rounded-[20px] bg-gradient-to-br from-amber-100 to-amber-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <i data-lucide="bar-chart-3" class="w-8 h-8 text-amber-600"></i>
+                                </div>
+                                <h3 class="text-2xl font-black text-slate-900 mb-3">Realtime Inzicht</h3>
+                                <p class="text-slate-600 leading-relaxed font-medium mb-4">
+                                    Live dashboards geven je exact inzicht in loonkosten, personeelsbezetting en het hele budgetoverzicht.
+                                </p>
+                                <div class="flex items-center gap-2 text-sm font-bold text-amber-600">
+                                    <span class="text-lg">📊</span>
+                                    <span>100+ rapportages beschikbaar</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Benefit 6 -->
+                        <div class="benefit-card group bg-white rounded-[32px] p-8 border-2 border-slate-100 hover:border-rose-500 hover:shadow-[0_30px_80px_-15px_rgba(244,63,94,0.2)] hover:scale-105 transition-all duration-300 relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-rose-50 rounded-full -mr-16 -mt-16 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            <div class="relative z-10">
+                                <div class="w-16 h-16 rounded-[20px] bg-gradient-to-br from-rose-100 to-rose-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                    <i data-lucide="heart-handshake" class="w-8 h-8 text-rose-600"></i>
+                                </div>
+                                <h3 class="text-2xl font-black text-slate-900 mb-3">Persoonlijk</h3>
+                                <p class="text-slate-600 leading-relaxed font-medium mb-4">
+                                    We kennen je bedrijf, we begrijpen je situatie. Jij bent geen nummer voor ons
+                                </p>
+                                <div class="flex items-center gap-2 text-sm font-bold text-rose-600">
+                                    <span class="text-lg">❤️</span>
+                                    <span>Dedicated account manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Process Steps -->
+                    <div class="rounded-[42px] p-12 md:p-24 border-2 border-slate-100 process-section mt-8">
+                        <div class="mt-10 pt-10 border-t-2 border-slate-100">
+                            <div class="bg-primary-blue rounded-[42px] p-16 text-center shadow-[0_20px_60px_-15px_rgba(29,58,138,0.3)]">
+                                <h4 class="text-3xl md:text-4xl font-black text-white mb-6">Begin met jouw payroll binnen 24u</h4>
+                                <p class="text-lg text-blue-50 font-medium max-w-2xl mx-auto mb-10 leading-relaxed">
+                                    Naast snelheid is zekerheid belangrijk. Daarom begeleiden onze HR-experts je persoonlijk door elk stap.
+                                </p>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                    <div class="flex items-center gap-3 justify-center bg-white/15 rounded-[20px] backdrop-blur-sm p-6 hover:bg-white/20 transition-all duration-300">
+                                        <div class="flex-shrink-0">
+                                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                        <span class="text-white font-black">Geen technische kennis nodig</span>
+                                    </div>
+                                    <div class="flex items-center gap-3 justify-center bg-white/15 rounded-[20px] backdrop-blur-sm p-6 hover:bg-white/20 transition-all duration-300">
+                                        <div class="flex-shrink-0">
+                                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                        <span class="text-white font-black">Gratis onboarding</span>
+                                    </div>
+                                    <div class="flex items-center gap-3 justify-center bg-white/15 rounded-[20px] backdrop-blur-sm p-6 hover:bg-white/20 transition-all duration-300">
+                                        <div class="flex-shrink-0">
+                                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </div>
+                                        <span class="text-white font-black">Volledig ondersteuning</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- ================================
+             FAQ SECTION
+             ================================ -->
+        <section id="faq" class="py-32 px-6 relative overflow-hidden">
+            <!-- Decorative gradient -->
+            <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-50/30 blur-[150px] rounded-full -z-10 -translate-y-1/2"></div>
+            
+            <div class="max-w-7xl mx-auto">
+                <div class="faq-container grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20">
+                    
+                    <!-- Left Side: Contact Info -->
+                    <div class="lg:col-span-4 space-y-8">
+                        <!-- Header -->
+                        <div class="faq-header space-y-3">
+                            <h2 class="text-3xl md:text-[2.75rem] font-black text-slate-900 leading-tight tracking-[-0.04em]">
+                                Veelgestelde vragen
+                            </h2>
+                            <p class="text-[0.9375rem] text-slate-500 leading-relaxed font-medium">
+                                Heb je meer vragen? Neem direct contact met ons op.
+                            </p>
+                        </div>
+
+                        <!-- Contact Info - Modern Text Layout -->
+                        <div class="space-y-8">
+                            <!-- Phone -->
+                            <div class="faq-contact-item">
+                                <div class="flex items-start gap-4 mb-3">
+                                    <div class="w-12 h-12 rounded-[14px] bg-blue-50 flex items-center justify-center flex-shrink-0">
+                                        <span class="material-icons text-blue-600" style="font-size: 24px;">phone_in_talk</span>
+                                    </div>
+                                    <div>
+                                        <p class="text-[0.75rem] font-black text-slate-400 uppercase tracking-[0.1em]">Bel ons direct</p>
+                                        <a href="tel:+3292345678" class="text-[1.25rem] font-black text-slate-900 hover:text-blue-600 transition-colors">
+                                            +32 9 234 56 78
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="text-[0.8125rem] text-slate-500 font-medium ml-16">Alleen beschikbaar op weekdagen</p>
+                            </div>
+
+                            <!-- Hours -->
+                            <div class="faq-contact-item">
+                                <div class="flex items-start gap-4 mb-4">
+                                    <div class="w-12 h-12 rounded-[14px] bg-emerald-50 flex items-center justify-center flex-shrink-0">
+                                        <span class="material-icons text-emerald-600" style="font-size: 24px;">schedule</span>
+                                    </div>
+                                    <div>
+                                        <p class="text-[0.75rem] font-black text-slate-400 uppercase tracking-[0.1em]">Openingstijden</p>
+                                        <div class="space-y-1 text-[0.9375rem]">
+                                            <div class="flex gap-8">
+                                                <span class="font-bold text-slate-600 min-w-fit">Ma - Vr:</span>
+                                                <span class="font-black text-slate-900">09:00 - 16:00</span>
+                                            </div>
+                                            <div class="flex gap-8">
+                                                <span class="font-bold text-slate-600 min-w-fit">Weekend:</span>
+                                                <span class="font-black text-slate-400">Gesloten</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="inline-flex items-center justify-center gap-2 w-full py-3 px-6 bg-primary-blue text-white font-black rounded-[16px] hover:shadow-[0_15px_40px_-10px_rgba(29,58,138,0.3)] transition-all duration-300 hover:-translate-y-0.5 text-[0.9375rem]">
+                                    <span class="material-icons" style="font-size: 20px;">mail</span>
+                                    <span>Contacteer ons</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: FAQ Accordion -->
+                    <div class="lg:col-span-8">
+                        <div class="faq-items space-y-3">
+                            
+                            <!-- FAQ Item 1 -->
+                            <div class="faq-item bg-white rounded-[24px] border-2 border-slate-100 overflow-hidden transition-all duration-500 shadow-[0_8px_30px_-8px_rgba(0,0,0,0.06)]" data-faq="1">
+                                <button class="faq-question w-full px-6 py-5 flex items-center justify-between text-left group hover:bg-slate-50/50 transition-all duration-300">
+                                    <span class="text-[1.0625rem] font-black text-slate-900 pr-4 group-hover:text-blue-600 transition-colors leading-tight">
+                                       Wat is Connectinn en hoe werkt het?
+                                    </span>
+                                    <div class="faq-icon w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center flex-shrink-0 transition-all duration-500 group-hover:bg-blue-100 group-hover:rotate-180">
+                                        <span class="material-icons text-slate-600 group-hover:text-blue-600" style="font-size: 20px;">expand_more</span>
+                                    </div>
+                                </button>
+                                <div class="faq-answer overflow-hidden">
+                                    <div class="px-6 pb-5 text-slate-600 text-[0.95rem] leading-relaxed font-medium space-y-3">
+                                        <p>
+                                            ConnectInn is een alles-in-één payroll software ontworpen voor moderne bedrijven. Onze cloudgebaseerde oplossing automatiseert het volledige loonverwerkingsproces, van salarisberekening tot tijdregistratie.
+                                             Met een gebruiksvriendelijke interface en krachtige functies helpt ConnectInn u tijd te besparen, fouten te verminderen en volledige controle te krijgen over uw payroll administratie.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 2 -->
+                            <div class="faq-item bg-white rounded-[24px] border-2 border-slate-100 overflow-hidden transition-all duration-500 shadow-[0_8px_30px_-8px_rgba(0,0,0,0.06)]" data-faq="2">
+                                <button class="faq-question w-full px-6 py-5 flex items-center justify-between text-left group hover:bg-slate-50/50 transition-all duration-300">
+                                    <span class="text-[1.0625rem] font-black text-slate-900 pr-4 group-hover:text-blue-600 transition-colors leading-tight">
+                                        Zijn er extra kosten naast het abonnement?
+                                    </span>
+                                    <div class="faq-icon w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center flex-shrink-0 transition-all duration-500 group-hover:bg-blue-100 group-hover:rotate-180">
+                                        <span class="material-icons text-slate-600 group-hover:text-blue-600" style="font-size: 20px;">expand_more</span>
+                                    </div>
+                                </button>
+                                <div class="faq-answer overflow-hidden">
+                                    <div class="px-6 pb-5 text-slate-600 text-[0.95rem] leading-relaxed font-medium space-y-3">
+                                        <p>
+                                            Nee, ConnectInn hanteert volledige transparantie in de prijzen. Het maandelijkse abonnement dekt alle functionaliteiten:
+                                        </p>
+                                        <ul class="list-disc list-inside space-y-2 ml-4">
+                                            <li>Onbeperkt aantal tijdsregistraties</li>
+                                            <li>Alle software-updates en nieuwe features</li>
+                                            <li>Op weekdagen support van de klantendienst</li>
+                                            <li>Veilige cloud opslag van al uw documenten</li>
+                                        </ul>
+                                        <p>
+                                            De enige uitzondering zijn specifieke consultancydiensten op aanvraag, maar deze zijn volledig optioneel.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 3 -->
+                            <div class="faq-item bg-white rounded-[24px] border-2 border-slate-100 overflow-hidden transition-all duration-500 shadow-[0_8px_30px_-8px_rgba(0,0,0,0.06)]" data-faq="3">
+                                <button class="faq-question w-full px-6 py-5 flex items-center justify-between text-left group hover:bg-slate-50/50 transition-all duration-300">
+                                    <span class="text-[1.0625rem] font-black text-slate-900 pr-4 group-hover:text-blue-600 transition-colors leading-tight">
+                                        Zijn de gegevens van de werknemer veilig bij ConnectInn?
+                                    </span>
+                                    <div class="faq-icon w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center flex-shrink-0 transition-all duration-500 group-hover:bg-blue-100 group-hover:rotate-180">
+                                        <span class="material-icons text-slate-600 group-hover:text-blue-600" style="font-size: 20px;">expand_more</span>
+                                    </div>
+                                </button>
+                                <div class="faq-answer overflow-hidden">
+                                    <div class="px-6 pb-5 text-slate-600 text-[0.95rem] leading-relaxed font-medium space-y-3">
+                                        <p>
+                                            Absoluut! ConnectInn maakt gebruik van geavanceerde beveiligingsmaatregelen om de gegevens van uw werknemers te beschermen. Onze cloudgebaseerde oplossing voldoet aan de hoogste normen op het gebied van gegevensbeveiliging en privacy omtrent de Europese GDPR-regelgeving.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 4 -->
+                            <div class="faq-item bg-white rounded-[24px] border-2 border-slate-100 overflow-hidden transition-all duration-500 shadow-[0_8px_30px_-8px_rgba(0,0,0,0.06)]" data-faq="4">
+                                <button class="faq-question w-full px-6 py-5 flex items-center justify-between text-left group hover:bg-slate-50/50 transition-all duration-300">
+                                    <span class="text-[1.0625rem] font-black text-slate-900 pr-4 group-hover:text-blue-600 transition-colors leading-tight">
+                                       Welke talen spreekt ConnectInn?
+                                    </span>
+                                    <div class="faq-icon w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center flex-shrink-0 transition-all duration-500 group-hover:bg-blue-100 group-hover:rotate-180">
+                                        <span class="material-icons text-slate-600 group-hover:text-blue-600" style="font-size: 20px;">expand_more</span>
+                                    </div>
+                                </button>
+                                <div class="faq-answer overflow-hidden">
+                                    <div class="px-6 pb-5 text-slate-600 text-[0.95rem] leading-relaxed font-medium space-y-3">
+                                        <p>
+                                            ConnectInn ondersteunt meerdere talen om een breed scala aan gebruikers te bedienen. Momenteel zijn de volgende talen beschikbaar:
+                                        </p>
+                                        <ul class="list-disc list-inside space-y-2 ml-4">
+                                            <li><strong>Nederlands (NL)</strong> - Beschikbaar</li>
+                                            <li><strong>Frans (FR)</strong> - Beschikbaar</li>
+                                            <li><strong>Engels (EN)</strong> - Beschikbaar</li>
+                                            <li><strong>Arabisch (AR)</strong> - Beschikbaar</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 5 -->
+                            <div class="faq-item bg-white rounded-[24px] border-2 border-slate-100 overflow-hidden transition-all duration-500 shadow-[0_8px_30px_-8px_rgba(0,0,0,0.06)]" data-faq="5">
+                                <button class="faq-question w-full px-6 py-5 flex items-center justify-between text-left group hover:bg-slate-50/50 transition-all duration-300">
+                                    <span class="text-[1.0625rem] font-black text-slate-900 pr-4 group-hover:text-blue-600 transition-colors leading-tight">
+                                        Hoe kan ik klant worden van ConnectInn?
+                                    </span>
+                                    <div class="faq-icon w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center flex-shrink-0 transition-all duration-500 group-hover:bg-blue-100 group-hover:rotate-180">
+                                        <span class="material-icons text-slate-600 group-hover:text-blue-600" style="font-size: 20px;">expand_more</span>
+                                    </div>
+                                </button>
+                                <div class="faq-answer overflow-hidden">
+                                    <div class="px-6 pb-5 text-slate-600 text-[0.95rem] leading-relaxed font-medium space-y-3">
+                                        <p>
+                                            Neem contact op met ons verkoopteam via het contactformulier of bel ons direct. We plannen graag een demo in om uw specifieke behoeften te bespreken en u te laten zien hoe ConnectInn uw payroll processen kan transformeren.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- ================================
+         FOOTER
+         ================================ -->
+    <footer class="bg-white pt-24 pb-12 px-6 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+                <div class="space-y-6">
+                    <!-- Logo -->
+                    <svg viewBox="0 0 460 100" class="h-8 w-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="0" y="74" fill="black" style="font: 800 68px Inter, sans-serif; letter-spacing: -0.04em;">CONNECT</text>
+                        <g transform="translate(325, 12) scale(0.75)">
+                            <path d="M50 5 L95 50 L50 95 L5 50 Z" stroke="#1D3A8A" stroke-width="14" stroke-linejoin="round"/>
+                            <path d="M50 20 C 65 20, 80 35, 80 50 C 80 65, 65 80, 50 80 C 35 80, 20 65, 20 50 C 20 35, 35 20, 50 20" stroke="#1D3A8A" stroke-width="12" fill="none"/>
+                            <path d="M50 35 L65 50 L50 65 L35 50 Z" fill="white"/>
+                        </g>
+                    </svg>
+                    <p class="text-slate-500 leading-relaxed text-[0.9375rem]">
+                        ConnectInn is dé specialist in loonadministratie voor de Belgische markt.
+                    </p>
+                    <div class="flex gap-4 text-slate-400">
+                        <i data-lucide="facebook" class="w-5 h-5 hover:text-blue-900 cursor-pointer transition-colors"></i>
+                        <i data-lucide="instagram" class="w-5 h-5 hover:text-blue-900 cursor-pointer transition-colors"></i>
+                        <i data-lucide="twitter" class="w-5 h-5 hover:text-blue-900 cursor-pointer transition-colors"></i>
+                        <i data-lucide="linkedin" class="w-5 h-5 hover:text-blue-900 cursor-pointer transition-colors"></i>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class=\"font-bold text-slate-900 mb-6 text-[0.875rem] uppercase tracking-wider\">Producten</h4>
+                    <ul class=\"space-y-4 text-slate-500 font-medium text-[0.9375rem]\">
+                        <li class="hover:text-blue-900 cursor-pointer">Payroll Platform</li>
+                        <li class="hover:text-blue-900 cursor-pointer">HR Essentials</li>
+                        <li class="hover:text-blue-900 cursor-pointer">Time Tracking</li>
+                        <li class="hover:text-blue-900 cursor-pointer">Expenses</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class=\"font-bold text-slate-900 mb-6 text-[0.875rem] uppercase tracking-wider\">ConnectInn</h4>
+                    <ul class=\"space-y-4 text-slate-500 font-medium text-[0.9375rem]\">
+                        <li class="hover:text-blue-900 cursor-pointer">Waarom ConnectInn</li>
+                        <li class="hover:text-blue-900 cursor-pointer">About Us</li>
+                        <li class="hover:text-blue-900 cursor-pointer">Blog</li>
+                        <li class="hover:text-blue-900 cursor-pointer">Klanten Support</li>
+                    </ul>
+                </div>
+
+                <div class="space-y-6">
+                    <h4 class="font-bold text-slate-900 mb-6 text-[0.875rem] uppercase tracking-wider">Select Language</h4>
+                    <div class="grid grid-cols-2 gap-2">
+                        <button class="px-3 py-2 rounded-[10px] border text-[0.75rem] font-bold flex items-center gap-2 transition-all bg-blue-50 border-blue-200 text-blue-900">
+                            <span class="text-lg">🇳🇱</span> NL
+                        </button>
+                        <button class="px-3 py-2 rounded-[10px] border text-xs font-bold flex items-center gap-2 transition-all bg-slate-50 border-slate-100 text-slate-500 hover:border-slate-300">
+                            <span class="text-lg">🇫🇷</span> FR
+                        </button>
+                        <button class="px-3 py-2 rounded-[10px] border text-xs font-bold flex items-center gap-2 transition-all bg-slate-50 border-slate-100 text-slate-500 hover:border-slate-300">
+                            <span class="text-lg">🇬🇧</span> EN
+                        </button>
+                        <button class="px-3 py-2 rounded-[10px] border text-xs font-bold flex items-center gap-2 transition-all bg-slate-50 border-slate-100 text-slate-500 hover:border-slate-300">
+                            <span class="text-lg">🇧🇪</span> AR
+                        </button>
+                    </div>
+                    
+                    <div class="pt-2">
+                        <div class="relative">
+                            <input type="email" placeholder="Your email" class="w-full pl-4 pr-12 py-3 bg-slate-50 border border-slate-100 rounded-[10px] text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all">
+                            <button class="absolute right-1.5 top-1.5 p-2 bg-primary-blue text-white rounded-[8px]">
+                                <i data-lucide="send" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="pt-12 border-t border-slate-100 flex flex-col md:flex-row items-center justify-between gap-6 text-[0.75rem] text-slate-400 font-bold uppercase tracking-widest">
+                <p>© 2026 ConnectInn. Alle rechten voorbehouden.</p>
+                <div class="flex gap-8">
+                    <span class="hover:text-slate-900 cursor-pointer">Privacy Beleid</span>
+                    <span class="hover:text-slate-900 cursor-pointer">Voorwaarden</span>
+                    <span class="hover:text-slate-900 cursor-pointer">Cookies</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================================
+         SCRIPTS
+         ================================ -->
+    <script src="js/script.js"></script>
+    <script src="js/pricing.js"></script>
+    <script src="js/customer.js"></script>
+</body>
+</html>
